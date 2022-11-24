@@ -7,10 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo = 'Registro de Usuarios';
-  mensaje= ""
-  registrado=false
-  nombre:string=""
-  apellido:string=""
+  mensaje="";
+  registrado=false;
+  nombre:string="";
+  apellido:string="";
+  entradas: object[];
+
+
+  constructor() {
+
+    this.entradas=[
+
+      {titulo:"Pyton cada día más presente"},
+      {titulo:"Java presente desde hace más de 20 años"},
+      {titulo:"JavaScript cada vez más funcional"},
+      {titulo:"Kotlin potencia para tus apps"},
+      {titulo:"¿Dónde quedó pascal?"},
+    ]
+
+
+  }
+
 
 
   registrarUsuario() {
